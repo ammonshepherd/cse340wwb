@@ -4,3 +4,769 @@
 *:after {
   box-sizing: border-box;
 }
+
+/* colors
+light grey
+  #bababa;
+grey
+  #8d8d8d;
+dark grey
+  #3a3a3a;
+light blue 
+  #a6cbeb;
+blue 
+  #4c96d7;
+white 
+  #ffffff;
+*/
+
+/* ****************
+* TAG Styles
+******************/
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/site/small_check.jpg");
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+header a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #3a3a3a;
+  padding: 0rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+nav a {
+  padding: 0.4rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #4c96d7;
+  color: #3a3a3a;
+}
+
+main {
+  padding: 1rem;
+}
+main h1 {
+  font-size: 4vw;
+}
+
+footer {
+  border-top: 4px solid #3a3a3a;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 0.6rem;
+}
+footer p {
+  margin: 0.2rem;
+}
+
+
+/* ***********************
+* General Layout Styles
+*************************/
+.container {
+  width: 90%;
+  margin: 1.6rem auto;
+  border: 4px solid #4c96d7;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card {
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  padding: 20px;
+}
+
+
+/* **************
+* Message Styles
+*****************/
+.alert {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.error {
+  color: rgb(110, 1, 1);
+  background-color: rgb(250, 200, 200);
+}
+.success {
+  color:rgb(0, 120, 30);
+  background-color:rgb(211, 254, 211);
+}
+.warning {
+  color:rgb(100, 100, 0);
+  background-color:rgb(255, 250, 200);
+}
+.info {
+  color:rgb(0, 55, 125);
+  background-color:rgb(200, 230, 250);
+}
+
+input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+  border: 1px solid rgb(211, 33, 33);
+}
+
+input:required:valid, textarea:required:valid {
+  border: 1px solid rgb(23, 212, 70);
+}
+ul.alert {
+  list-style-type: none;
+}
+
+/* *******************
+* General Styles
+**********************/
+.button {
+  appearance: button;
+  display: block;
+  margin: 1rem;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color:rgb(240, 240, 240);
+}
+.account {
+  margin: 1rem 3rem;
+}
+.title {
+  font-weight: 600;
+}
+::placeholder {
+  color: #ccc;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.site-name a {
+  font-size: 80px;
+}
+
+/* *******************
+* Home Page Styles
+*********************/
+#dmc-text {
+  color: #1c58a5;
+}
+#dmc-text p {
+  padding: 0;
+  margin: 0;
+}
+#dmc-text ul {
+  padding: 0;
+  margin: 0;
+}
+#dmc-text ul li {
+  list-style-type: none;
+}
+#dmc-image img {
+  width: 90%;
+}
+#dmc-button {
+  text-align: center;
+  margin: 1rem;
+}
+#dmc-button button {
+  background-color: #4c96d7;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #3a3a3a;
+  color: #000;
+}
+#dmc-reviews ul {
+  padding-left: 20px;
+}
+#dmc-reviews li {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+#dmc-rev-ups {
+  display: flex;
+  flex-flow: column wrap;
+}
+#dmc-upgrades {
+  margin: 0;
+  padding: 0;
+}
+#upgrade-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.upgrade-item {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  background-color: #4c96d7;
+}
+.upgrade-item img {
+  background-color: #4c96d7;
+  border: 1px solid #8d8d8d;
+  height: 65px;
+}
+.upgrade-item p {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+
+/* *********************
+* Client Account Pages 
+***********************/
+.login {
+  width: 50vw;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+.login h1 {
+  font-weight: normal;
+  text-align: center;
+}
+.login form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login label {
+  margin: 4px 0px 20px 0px;
+}
+.login input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login_submit {
+  background-color: #4c96d7;
+  color: #fff;
+  width: 40%;
+}
+.login_submit:hover {
+  background-color:#366fba;
+  cursor: pointer;
+}
+.login_pass_note {
+  display: block;
+  font-size: .8rem;
+  color:#8d8d8d;
+  line-height: 1.2;
+  margin: 8px 20px;
+}
+.create_account {
+  background-color: #eee;
+  padding: 20px;
+  font-size: .9rem;
+  text-align: center;
+}
+.register_submit {
+  background-color: #009000;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.client-update form label input {
+  display: block;
+  font-size: 1.2rem;
+  padding: 4px;
+}
+.client-update form label {
+  display: block;
+  margin: 1rem 0;
+}
+.client-update_button {
+  background-color: #4c96d7;
+  color:#000;
+  max-width: 300px;
+  align-self: center;
+  text-decoration: none;
+}
+.client-update_button:hover {
+  background-color: #8d8d8d;
+  color: #000;
+}
+.update-password_button, .update-client_button {
+  background-color:#19ae19;
+  color:#000;
+  max-width: 300px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+.update-password_button {
+  background-color: #366fba;
+}
+
+#reviews-admin {
+  border-top: 1px solid #888;
+  margin-top: 40px;
+}
+#admin_review-section th {
+  background-color: #ddd;
+}
+#admin_review-section td {
+  padding: 8px 4px;
+}
+.editor img {
+  width: 20px;
+
+}
+
+/* *************************
+* Vehicle Management Pages
+***************************/
+.vehicle-management {
+  padding: 20px;
+  max-width: 600px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vehicle-management_button {
+  background-color:#3a3a3a;
+  color:#ccc;
+  max-width: 300px;
+  align-self: center;
+  text-decoration: none;
+}
+.vehicle-management_button:hover {
+  background-color: #8d8d8d;
+  color: #000;
+}
+
+#classificationList {
+  display: block;
+  font-size: 1.2rem;
+  padding: 4px;
+
+}
+
+#inventoryDisplay {
+  margin-top: 2rem;
+}
+#inventoryDisplay th {
+  background-color: #a6cbeb;
+}
+#inventoryDisplay tr:nth-child(even) {
+  background-color: #eee;
+}
+#inventoryDisplay td {
+  padding: 4px;
+}
+.editor {
+  text-align: center;
+}
+#inventoryDisplay > tbody > tr > td > a > img {
+  max-width: 20px;
+  margin: auto;
+}
+.add-vehicle form label, 
+.add-class form label {
+  display: block;
+  margin: 1rem 0;
+}
+.add-vehicle form label input, 
+.add-vehicle form label textarea, 
+.add-vehicle form label select, 
+.add-class form label input {
+  display: block;
+  font-size: 1.2rem;
+  padding: 4px;
+}
+.add-vehicle form label textarea {
+  width: 90%;
+  height: 180px;
+}
+.add-vehicle_button,
+.add-class_button {
+  color: #fff;
+  background-color: #009000;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #3a3a3a;
+}
+.add-vehicle_button:hover,
+.add-class_button:hover {
+  background-color:#19ae19;
+}
+.class_note {
+  display: block;
+  font-size: .8rem;
+  color:#8d8d8d;
+  line-height: 1.2;
+  margin: 8px 0px;
+}
+
+/* *****************************
+* Classification Pages
+*******************************/
+#inv-display {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#inv-display li {
+  width: 80%;
+}
+
+.inventory-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.inventory-card a img {
+  max-width: 250px;
+}
+
+
+/* *****************************
+* Vehicle Detail Pages
+*******************************/
+.vehicle-card {
+  display: flex;
+  flex-flow: column;
+}
+
+#vehicle-image {
+  order:1;
+}
+#vehicle-price {
+  font-weight: bold;
+  padding: 40px 0px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #dbe8f3;
+}
+#price {
+  margin-left: 40px;
+}
+
+.thumbnails {
+  order: 2;
+}
+#reviews {
+  order: 3;
+  border-top: 1px solid #888;
+  margin-top: 20px;
+}
+
+#vehicle-image img {
+  width: 100%;
+}
+.vehicle-info {
+  order: 3;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+}
+.vehicle-info p {
+  padding: 8px;
+}
+.thumb-image {
+  margin: 4px;
+}
+.colored {
+  background-color:#ccc;
+}
+#screen-name {
+  padding: 0px;
+  margin: 8px 0px;
+  font-size: .8rem;
+}
+#screen-name span {
+  background-color: #ddd;
+  padding: 4px;
+}
+#reviews label {
+  display: block;
+}
+#reviewText {
+  width: 80%;
+  height: 120px;
+}
+.submit-review_button {
+  font-size: 1.4rem;
+  background-color:#19ae19;
+}
+.submit-review_button:hover {
+  background-color: #99df99;
+}
+
+#review-section {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: .9em;
+}
+.review-item {
+  margin: 10px;
+  margin-bottom: 20px;
+  background:rgb(255, 250, 230);
+  border-radius: 8px;
+  padding: 4px;
+}
+.review-auth {
+  font-size: .9rem;
+  font-weight: bold;
+  margin: 0px;
+}
+.review-date {
+  font-size: .9rem;
+  color: #777;
+  margin: 0px;
+}
+
+
+/* *****************************
+* Vehicle Detail Pages
+*******************************/
+#uploads-form fieldset {
+  margin: 20px;
+}
+.vehicle-select {
+  display: block;
+  font-size: 1.2rem;
+  padding: 4px;
+  margin: 20px;
+}
+#file-upload_field input {
+  border-color: red;
+}
+input[type="file"] {
+  display: block;
+  font-size: 1.2rem;
+  color: #888;
+  padding: 4px;
+}
+.file-button {
+  color: #fff;
+  background-color: #009000;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid #3a3a3a;
+}
+.file-button:hover {
+  color:#3a3a3a;
+}
+#image-display {
+  display: flex;
+  flex-flow: row wrap;
+}
+#image-display img {
+max-width: 75vw;
+}
+
+/* *****************************
+* Image Upload Page
+*******************************/
+.image {
+  width: 70vw;
+  box-shadow: 0 0 4px 1px #d0d0d0;
+}
+.image img {
+  width: 90%;
+  margin: auto;
+}
+.image-name {
+  text-align: center;
+  font-size: 1vw;
+}
+.image-manage a {
+  background-color: #ddd;
+  margin: 0px;
+  padding: 8px;
+  display: block;
+  text-decoration: none;
+  color: red;
+}
+.delete-icon, .delete-icon:visited {
+  vertical-align: bottom;
+  color: red;
+}
+.edit-icon, .edit-icon:visited {
+  vertical-align: bottom;
+  color:dodgerblue; 
+}
+.edit-icon:hover {
+  color: #777;
+}
+
+
+/* *****************************
+* Edit Review Page
+*******************************/
+.edit-review {
+  width: 60vw;
+}
+.edit-review label {
+  display: block;
+}
+
+
+/* *****************************
+* Delete Review Page
+*******************************/
+.cancel-delete {
+  border: 2px solid #333;
+  font-size: 1.4rem;
+  background-color:rgb(221, 90, 90);
+}
+.cancel-delete:hover {
+  background-color:rgb(250, 200, 200);
+}
+#delete-review-buttons {
+  display: flex;
+  flex-direction: column;
+}
+/* *****************************
+* Larger screen styles
+*******************************/
+@media screen and (min-width: 980px) {
+  #hero-section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 20% 5% 75%;
+    margin-bottom: 2rem;
+  }
+  #dmc-button {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #dmc-button button {
+    font-size: 0.8rem;
+  }
+  #dmc-image {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+  }
+  #dmc-rev-ups {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  #dmc-upgrades {
+    width: 45%;
+    order: 1;
+  }
+  #dmc-reviews {
+    order: 2;
+  }
+
+  .login {
+    width: 450px;
+  }
+  .login form {
+    font-size: 2rem;
+    padding: 20px 40px;
+  }
+  .login form input {
+    padding: 14px;
+  }
+
+  .add-vehicle, .add-class {
+    width: 450px;
+  }
+  .add-vehicle form label textarea {
+    width: 50%;
+    height: 180px;
+  }
+
+  #inv-display {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #inv-display li {
+    width: 20%;
+    min-width: 250px;
+    margin: .5rem;
+  }
+
+  .vehicle-card {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+  }
+  #reviews {
+    grid-column: 1 / span 3;
+  }
+  .vehicle-card img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-right: 40px;
+  }
+  #thumb-title {
+    visibility: hidden;
+  }
+  .thumbnails {
+    order: 1;
+  }
+  .thumbnails img:hover {
+    transform: scale(2.5);
+  }
+  #vehicle-image {
+    order: 2;
+    min-width: 50%;
+    margin-right: 20px;
+  }
+  .vehicle-info {
+    order: 3;
+    border: none;
+  }
+  .image-display {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  .image {
+    max-width: 10vw;
+  }
+
+  #delete-review-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
