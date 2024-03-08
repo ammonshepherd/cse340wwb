@@ -241,3 +241,34 @@ VALUES   (
 UPDATE public.inventory SET inv_description = REPLACE(inv_description, 'the small interiors', 'a huge interior') WHERE inv_id = 10;
 
 UPDATE inventory SET inv_image = REPLACE(inv_image, '/images/', '/images/vehicles/'), inv_thumbnail = REPLACE(inv_thumbnail, '/images/', '/images/vehicles/');
+
+/* Fix image names for vehicles. These are not part of the instructions. */
+UPDATE inventory set inv_image = REPLACE(inv_image, 'bat.jpg', 'batmobile.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'bat-tn.jpg', 'batmobile-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'dog.jpg', 'dog-car.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'dog-tn.jpg', 'dog-car-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'fbi.jpg', 'survan.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'fbi-tn.jpg', 'survan-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'jeep-wrangler.jpg', 'wrangler.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'jeep-wrangler-tn.jpg', 'wrangler-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'lambo-Adve.jpg', 'adventador.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'lambo-Adve-tn.jpg', 'adventador-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'monster.jpg', 'monster-truck.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'monster-tn.jpg', 'monster-truck-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'ms.jpg', 'mechanic.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'ms-tn.jpg', 'mechanic-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'ford-modelt.jpg', 'model-t.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'ford-modelt-tn.jpg', 'model-t-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'mm.jpg', 'mystery-van.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'mm-tn.jpg', 'mystery-van-tn.jpg');
+
+UPDATE inventory set inv_image = REPLACE(inv_image, 'crown-vic.jpg', 'crwn-vic.jpg'),
+inv_thumbnail = REPLACE(inv_thumbnail, 'crown-vic-tn.jpg', 'crwn-vic-tn.jpg');

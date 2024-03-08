@@ -1,0 +1,10 @@
+<%# Show the vehicles of a specific classification %>
+<% if (title) { %>
+    <h1><%= title %></h1>
+<% } else {
+      res.redirect('/')
+} %>
+
+<%# messages() %>
+
+<%- grid %>
