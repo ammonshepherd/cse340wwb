@@ -278,18 +278,18 @@ ul.alert {
   border-radius: 4px;
 }
 .login_submit {
-  background-color: #4c96d7;
+  background-color: #1c73bf;
   color: #fff;
   width: 40%;
 }
 .login_submit:hover {
-  background-color:#366fba;
+  background-color:#1d56a1;
   cursor: pointer;
 }
 .login_pass_note {
   display: block;
   font-size: .8rem;
-  color:#8d8d8d;
+  color:#606060;
   line-height: 1.2;
   margin: 8px 20px;
 }

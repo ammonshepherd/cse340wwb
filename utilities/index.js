@@ -6,7 +6,7 @@ const Util = {}
  ************************** */
 Util.getNav = async function (req, res, next) {
   let data = await invModel.getClassifications()
-  let list = '<a href="/" title="Home page">Home</a></li>'
+  let list = '<a href="/" title="Home page">Home</a>'
   data.rows.forEach((row) => {
     list +=
       '<a href="/inv/type/' +
