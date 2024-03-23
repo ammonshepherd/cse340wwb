@@ -106,6 +106,13 @@ footer p {
 /* **************
 * Message Styles
 *****************/
+#messages ul {
+  list-style-type: none;
+}
+#messages ul li {
+  padding: 12px;
+}
+
 .alert {
   width: 80%;
   margin: 1rem auto;
@@ -139,9 +146,6 @@ textarea:focus:invalid {
 input:required:valid,
 textarea:required:valid {
   border: 1px solid rgb(23, 212, 70);
-}
-ul.alert {
-  list-style-type: none;
 }
 
 /* *******************

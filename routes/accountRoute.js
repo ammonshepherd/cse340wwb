@@ -13,4 +13,7 @@ router.get(
   utilities.handleErrors(accountController.buildRegister)
 )
 
+// Route to process registration
+router.post('/register', utilities.handleErrors(accountController.registerAccount))
+
 module.exports = router
