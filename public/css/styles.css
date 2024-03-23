@@ -85,7 +85,6 @@ footer p {
   margin: 0.2rem;
 }
 
-
 /* ***********************
 * General Layout Styles
 *************************/
@@ -104,7 +103,6 @@ footer p {
   padding: 20px;
 }
 
-
 /* **************
 * Message Styles
 *****************/
@@ -119,23 +117,27 @@ footer p {
   background-color: rgb(250, 200, 200);
 }
 .success {
-  color:rgb(0, 120, 30);
-  background-color:rgb(211, 254, 211);
+  color: rgb(0, 120, 30);
+  background-color: rgb(211, 254, 211);
 }
 .warning {
-  color:rgb(100, 100, 0);
-  background-color:rgb(255, 250, 200);
+  color: rgb(100, 100, 0);
+  background-color: rgb(255, 250, 200);
 }
 .info {
-  color:rgb(0, 55, 125);
-  background-color:rgb(200, 230, 250);
+  color: rgb(0, 55, 125);
+  background-color: rgb(200, 230, 250);
 }
 
-input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+input:required:invalid,
+input:focus:invalid,
+textarea:required:invalid,
+textarea:focus:invalid {
   border: 1px solid rgb(211, 33, 33);
 }
 
-input:required:valid, textarea:required:valid {
+input:required:valid,
+textarea:required:valid {
   border: 1px solid rgb(23, 212, 70);
 }
 ul.alert {
@@ -154,7 +156,7 @@ ul.alert {
   cursor: pointer;
 }
 .button:hover {
-  background-color:rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
 }
 .account {
   margin: 1rem 3rem;
@@ -167,11 +169,7 @@ ul.alert {
 }
 
 .material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 .site-name a {
@@ -249,7 +247,6 @@ ul.alert {
   background-color: #ffffff;
 }
 
-
 /* *********************
 * Client Account Pages 
 ***********************/
@@ -283,27 +280,31 @@ ul.alert {
   width: 40%;
 }
 .login_submit:hover {
-  background-color:#1d56a1;
+  background-color: #1d56a1;
   cursor: pointer;
 }
 .login_pass_note {
   display: block;
-  font-size: .8rem;
-  color:#606060;
+  font-size: 0.8rem;
+  color: #606060;
   line-height: 1.2;
   margin: 8px 20px;
+  text-align: justify;
 }
 .create_account {
   background-color: #eee;
   padding: 20px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 .register_submit {
-  background-color: #009000;
+  background-color: #006600;
   color: #fff;
   cursor: pointer;
   margin-bottom: 1rem;
+}
+.register_submit:hover {
+  background-color: #449944;
 }
 .client-update form label input {
   display: block;
@@ -316,7 +317,7 @@ ul.alert {
 }
 .client-update_button {
   background-color: #4c96d7;
-  color:#000;
+  color: #000;
   max-width: 300px;
   align-self: center;
   text-decoration: none;
@@ -325,9 +326,10 @@ ul.alert {
   background-color: #8d8d8d;
   color: #000;
 }
-.update-password_button, .update-client_button {
-  background-color:#19ae19;
-  color:#000;
+.update-password_button,
+.update-client_button {
+  background-color: #19ae19;
+  color: #000;
   max-width: 300px;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
@@ -348,7 +350,6 @@ ul.alert {
 }
 .editor img {
   width: 20px;
-
 }
 
 /* *************************
@@ -357,13 +358,13 @@ ul.alert {
 .vehicle-management {
   padding: 20px;
   max-width: 600px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .vehicle-management_button {
-  background-color:#3a3a3a;
-  color:#ccc;
+  background-color: #3a3a3a;
+  color: #ccc;
   max-width: 300px;
   align-self: center;
   text-decoration: none;
@@ -377,7 +378,6 @@ ul.alert {
   display: block;
   font-size: 1.2rem;
   padding: 4px;
-
 }
 
 #inventoryDisplay {
@@ -399,14 +399,14 @@ ul.alert {
   max-width: 20px;
   margin: auto;
 }
-.add-vehicle form label, 
+.add-vehicle form label,
 .add-class form label {
   display: block;
   margin: 1rem 0;
 }
-.add-vehicle form label input, 
-.add-vehicle form label textarea, 
-.add-vehicle form label select, 
+.add-vehicle form label input,
+.add-vehicle form label textarea,
+.add-vehicle form label select,
 .add-class form label input {
   display: block;
   font-size: 1.2rem;
@@ -426,12 +426,12 @@ ul.alert {
 }
 .add-vehicle_button:hover,
 .add-class_button:hover {
-  background-color:#19ae19;
+  background-color: #19ae19;
 }
 .class_note {
   display: block;
-  font-size: .8rem;
-  color:#8d8d8d;
+  font-size: 0.8rem;
+  color: #8d8d8d;
   line-height: 1.2;
   margin: 8px 0px;
 }
@@ -460,7 +460,6 @@ ul.alert {
   max-width: 250px;
 }
 
-
 /* *****************************
 * Vehicle Detail Pages
 *******************************/
@@ -470,7 +469,7 @@ ul.alert {
 }
 
 #vehicle-image {
-  order:1;
+  order: 1;
 }
 #vehicle-price {
   font-weight: bold;
@@ -509,12 +508,12 @@ ul.alert {
   margin: 4px;
 }
 .colored {
-  background-color:#ccc;
+  background-color: #ccc;
 }
 #screen-name {
   padding: 0px;
   margin: 8px 0px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 #screen-name span {
   background-color: #ddd;
@@ -529,34 +528,33 @@ ul.alert {
 }
 .submit-review_button {
   font-size: 1.4rem;
-  background-color:#19ae19;
+  background-color: #19ae19;
 }
 .submit-review_button:hover {
   background-color: #99df99;
 }
 
 #review-section {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: .9em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
 }
 .review-item {
   margin: 10px;
   margin-bottom: 20px;
-  background:rgb(255, 250, 230);
+  background: rgb(255, 250, 230);
   border-radius: 8px;
   padding: 4px;
 }
 .review-auth {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: bold;
   margin: 0px;
 }
 .review-date {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #777;
   margin: 0px;
 }
-
 
 /* *****************************
 * Vehicle Detail Pages
@@ -587,14 +585,14 @@ input[type="file"] {
   border: 1px solid #3a3a3a;
 }
 .file-button:hover {
-  color:#3a3a3a;
+  color: #3a3a3a;
 }
 #image-display {
   display: flex;
   flex-flow: row wrap;
 }
 #image-display img {
-max-width: 75vw;
+  max-width: 75vw;
 }
 
 /* *****************************
@@ -620,18 +618,19 @@ max-width: 75vw;
   text-decoration: none;
   color: red;
 }
-.delete-icon, .delete-icon:visited {
+.delete-icon,
+.delete-icon:visited {
   vertical-align: bottom;
   color: red;
 }
-.edit-icon, .edit-icon:visited {
+.edit-icon,
+.edit-icon:visited {
   vertical-align: bottom;
-  color:dodgerblue; 
+  color: dodgerblue;
 }
 .edit-icon:hover {
   color: #777;
 }
-
 
 /* *****************************
 * Edit Review Page
@@ -643,17 +642,16 @@ max-width: 75vw;
   display: block;
 }
 
-
 /* *****************************
 * Delete Review Page
 *******************************/
 .cancel-delete {
   border: 2px solid #333;
   font-size: 1.4rem;
-  background-color:rgb(221, 90, 90);
+  background-color: rgb(221, 90, 90);
 }
 .cancel-delete:hover {
-  background-color:rgb(250, 200, 200);
+  background-color: rgb(250, 200, 200);
 }
 #delete-review-buttons {
   display: flex;
@@ -704,7 +702,8 @@ max-width: 75vw;
     padding: 14px;
   }
 
-  .add-vehicle, .add-class {
+  .add-vehicle,
+  .add-class {
     width: 450px;
   }
   .add-vehicle form label textarea {
@@ -719,7 +718,7 @@ max-width: 75vw;
   #inv-display li {
     width: 20%;
     min-width: 250px;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 
   .vehicle-card {
@@ -768,5 +767,4 @@ max-width: 75vw;
     display: flex;
     flex-direction: row;
   }
-
 }
